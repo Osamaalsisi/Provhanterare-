@@ -1,0 +1,19 @@
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\bin\Debug\net6.0-windows\Provhanterare-Osama TE2.exe
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\bin\Debug\net6.0-windows\Provhanterare-Osama TE2.deps.json
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\bin\Debug\net6.0-windows\Provhanterare-Osama TE2.runtimeconfig.json
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\bin\Debug\net6.0-windows\Provhanterare-Osama TE2.dll
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\bin\Debug\net6.0-windows\Provhanterare-Osama TE2.pdb
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\obj\Debug\net6.0-windows\Provhanterare-Osama TE2.csproj.AssemblyReference.cache
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\obj\Debug\net6.0-windows\Provhanterare_Osama_TE2.Form1.resources
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\obj\Debug\net6.0-windows\Provhanterare_Osama_TE2.Form2.resources
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\obj\Debug\net6.0-windows\Provhanterare_Osama_TE2.Properties.Resources.resources
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\obj\Debug\net6.0-windows\Provhanterare-Osama TE2.csproj.GenerateResource.cache
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\obj\Debug\net6.0-windows\Provhanterare-Osama TE2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\obj\Debug\net6.0-windows\Provhanterare-Osama TE2.AssemblyInfoInputs.cache
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\obj\Debug\net6.0-windows\Provhanterare-Osama TE2.AssemblyInfo.cs
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\obj\Debug\net6.0-windows\Provhanterare-Osama TE2.csproj.CoreCompileInputs.cache
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\obj\Debug\net6.0-windows\Provhanterare-Osama TE2.dll
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\obj\Debug\net6.0-windows\refint\Provhanterare-Osama TE2.dll
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\obj\Debug\net6.0-windows\Provhanterare-Osama TE2.pdb
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\obj\Debug\net6.0-windows\Provhanterare-Osama TE2.genruntimeconfig.cache
+C:\Users\12OA0312\source\repos\Provhanterare-Osama TE2\Provhanterare-Osama TE2\obj\Debug\net6.0-windows\ref\Provhanterare-Osama TE2.dll
