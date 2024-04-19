@@ -1,9 +1,12 @@
+using System.Drawing.Text;
+
 namespace Provhanterare_Osama_TE2 {
     public partial class Form1 : Form {
         // Array to hold correct answers
         private List<string> facit = new List<string>() { "C1", "B2", "A3", "A4", "D5", "B6", "B7", "B8" };
         // List to hold user's answers
         private List<string> answers;
+
         public Form1() {
             InitializeComponent();
             answers = new List<string>();
@@ -29,12 +32,13 @@ namespace Provhanterare_Osama_TE2 {
             // Check if user selected a file
             if (saveFileDialog.FileName != "") {                // Write user's answers and results to the selected file
                 using (StreamWriter writer = new StreamWriter(saveFileDialog.FileName)) {
-                   
                     SaveRadioButtonAnswers(writer);
+                    writer.WriteLine("---------------------------------------------------------");
+                    SaveResultsRadiobutton(writer);
                     writer.WriteLine("---------------------------------------------------------");
                     SaveTextBoxAnswers(writer);
                     writer.WriteLine("---------------------------------------------------------");
-                    SaveResults(writer);
+                    SaveResultText(writer);
 
                 }
             }
@@ -43,8 +47,7 @@ namespace Provhanterare_Osama_TE2 {
         }
 
         private void SaveRadioButtonAnswers(StreamWriter writer) {
-            writer.WriteLine("Radio options:");
-            int questionNumber = 1;
+            writer.WriteLine("Your Results:");
             int checkedOptionCounter = 0;
 
             foreach (GroupBox question in panel1.Controls.OfType<GroupBox>()) {
@@ -60,33 +63,65 @@ namespace Provhanterare_Osama_TE2 {
 
 
         private void SaveTextBoxAnswers(StreamWriter writer) {
-            writer.WriteLine("Text Answers:");
+            writer.WriteLine("Test Results (Text):");
+
             foreach (GroupBox question in panel1.Controls.OfType<GroupBox>()) {
                 foreach (TextBox textBox in question.Controls.OfType<TextBox>()) {
                     writer.WriteLine(textBox.Text);
                     answers.Add(textBox.Text);
                 }
             }
+
         }
+    
 
 
-       private void SaveResults(StreamWriter writer) {
-            writer.WriteLine("Test Results:");
+        private void SaveResultsRadiobutton(StreamWriter writer) {
+            writer.WriteLine("Test Results (Radiobuttons):");
+            bool allQuestionsAnswered = true;
+
             for (int i = 0; i < facit.Count; i++) {
-        // Compare the saved answers with the correct answers
-        if (facit.Contains(answers[i])){
-            writer.WriteLine($"Question {i + 1}: Correct!");
+                // Check if the answer exists and compare it with the correct answers
+                if (i < answers.Count) {
+                    if (facit.Contains(answers[i])) {
+                        writer.WriteLine($"Question {i + 1}: Correct!");
+                    }
+                    else {
+                        writer.WriteLine($"Question {i + 1}: Incorrect. Correct answer is {facit[i]}");
+                    }
+                }
+                else {
+                    allQuestionsAnswered = false;
+                }
+            }
+
+            // Show message box if not all questions are answered
+            if (!allQuestionsAnswered) {
+                MessageBox.Show("Did not answer all questions.");
+
+            }
         }
-        else {
-            writer.WriteLine($"Question {i + 1}: Incorrect. Correct answer is {facit[i]}");
+
+        private void SaveResultText(StreamWriter writer) {
+            writer.WriteLine("Text Results");
+
+            writer.WriteLine("Question 9:  Moores lag kommer att tappa tempo eftersom tillverkningen blivit så komplex.");
+            writer.WriteLine("Question 10: Open-source erbjuder kostnadsbesparingar och samarbete, men medför säkerhetsrisker och brist på support.");
+            writer.WriteLine("Question 11: En konsekvent kodningsstil förbättrar läsbarheten, underhållet och samarbetet kring koden.");
+            writer.WriteLine("Question 12: Det är pågrund av operativsystemens unika krav och kompatibilitet.");
+            writer.WriteLine("Question 13: AI har breddat programmeringens möjligheter med automatisering och komplexitet.");
+
+
         }
-    }
-}
 
 
 
 
-private void Form1_Load(object sender, EventArgs e) {
+
+
+
+
+        private void Form1_Load(object sender, EventArgs e) {
 
         }
 
