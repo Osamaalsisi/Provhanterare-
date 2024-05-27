@@ -47,7 +47,7 @@ namespace Provhanterare_Osama_TE2 {
         }
 
         private void SaveRadioButtonAnswers(StreamWriter writer) {
-            writer.WriteLine("Your Results:");
+            writer.WriteLine("Test Results (Radiobuttons):");
             int checkedOptionCounter = 0;
 
             foreach (GroupBox question in panel1.Controls.OfType<GroupBox>()) {
@@ -77,7 +77,7 @@ namespace Provhanterare_Osama_TE2 {
 
 
         private void SaveResultsRadiobutton(StreamWriter writer) {
-            writer.WriteLine("Test Results (Radiobuttons):");
+            writer.WriteLine("Your Results:");
             bool allQuestionsAnswered = true;
 
             for (int i = 0; i < facit.Count; i++) {
